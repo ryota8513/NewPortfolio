@@ -16,7 +16,7 @@ body{
 
 /* ヘッダーレイアウト */
 .header-top{
-  background-color: pink;
+  /* background-color: pink; */
   width:1000px;
   height:150px;
   margin :0 auto;
@@ -25,7 +25,7 @@ body{
 .header-title{
   width:300px;
   height:100px;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 .header-title p{
   margin-top:-25px;
@@ -35,14 +35,14 @@ body{
   float:right;
   margin-top:-80px;
   padding-right:50px;
-  background-color:darkgrey;
+  /* background-color:darkgrey; */
 }
 .user{
   float:right;
   padding-right:50px;
    position: relative; 
   padding-top:-100px;
-  background-color:bisque;
+  /* background-color:bisque; */
 }
 .user-nav li ul {
    position: absolute; 
@@ -77,51 +77,31 @@ body{
 }
 
 /* ヘッダー下、画像表示用レイアウト */
-.slider-content{
-  position:relative;
+.slider-container {
+  position: relative;
   width:100%;
 }
-.slider-content.initialized{
+.slider-container.initialized {
   display:block;
 }
-/* .slider-arrow {
-  position: absolute; 
-  font-size: 40px;
-  top:130px; 
-  cursor: pointer; 
-  z-index: 10;  
-  opacity:0.7;
-} */
-/* .slider-prev{
-  left:0;
-  margin-left:10px;
-  color:white;
-}
-.slider-next{
-  right:0;
-  margin-right:10px;
-  color:white;
-} */
 .slider{
   padding:0;
+  margin-top:0px;
 }
 .slider li img{
-   width:100%;
-   height:300px;
-}
-
-/* ログイン前トップ表示用レイアウト */
-.common{
   width:100%;
-  background-color: pink;
+  height:450px;
 }
-.form{
-  margin:0 auto;
-  width:1000px;
-  height:400px;
+.form{ 
+  position:absolute;
+  width:100%;
+  height:100px;
   text-align: center;
-  background-color:#f0f0f0; 
-
+  z-index:30;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  /* opacity:0.8; */
 }
 .form ul{
   padding-left: 0px;
@@ -130,4 +110,13 @@ body{
   display: inline;
   padding:50px;
 }
-
+#button{
+  display       : inline-block;
+  border-radius : 20%;          /* 角丸       */
+  font-size     : 14pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 10px 24px;   /* 余白       */
+  background    : #7fe8b5;     /* 背景色     */
+  color         : #333333;     /* 文字色     */
+}

@@ -4,7 +4,7 @@ $('.slider').slick({
   dots:true,
   swipe:true,
   autoplay: true,
-  autoplaySpeed: 2500,
+  autoplaySpeed: 2000,
   arrows: false,
   infinite:true
   // appendArrows: $('.slider-content'),
