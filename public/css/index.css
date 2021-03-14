@@ -1,3 +1,4 @@
+/* 共通レイアウト */
 a{
   text-decoration:none;
   color: #444;
@@ -9,6 +10,11 @@ ul{
 li{
   list-style-type:none;
 }
+body{
+  margin: 0;
+}
+
+/* ヘッダーレイアウト */
 .header-top{
   background-color: pink;
   width:1000px;
@@ -69,6 +75,8 @@ li{
   width:600px;
   margin:0 auto;
 }
+
+/* ヘッダー下、画像表示用レイアウト */
 .slider-content{
   position:relative;
   width:100%;
@@ -76,15 +84,15 @@ li{
 .slider-content.initialized{
   display:block;
 }
-.slider-arrow {
-  position: absolute;
+/* .slider-arrow {
+  position: absolute; 
   font-size: 40px;
-  top:120px;
-  cursor: pointer;
+  top:130px; 
+  cursor: pointer; 
   z-index: 10;  
   opacity:0.7;
-}
-.slider-prev{
+} */
+/* .slider-prev{
   left:0;
   margin-left:10px;
   color:white;
@@ -93,7 +101,7 @@ li{
   right:0;
   margin-right:10px;
   color:white;
-}
+} */
 .slider{
   padding:0;
 }
@@ -101,3 +109,25 @@ li{
    width:100%;
    height:300px;
 }
+
+/* ログイン前トップ表示用レイアウト */
+.common{
+  width:100%;
+  background-color: pink;
+}
+.form{
+  margin:0 auto;
+  width:1000px;
+  height:400px;
+  text-align: center;
+  background-color:#f0f0f0; 
+
+}
+.form ul{
+  padding-left: 0px;
+}
+.form li{
+  display: inline;
+  padding:50px;
+}
+

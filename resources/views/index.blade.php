@@ -59,11 +59,19 @@
   </ul>
 </div>
 
+<div class="common">
+ <div class="form">
+  <ul>
+   <li><input type="button" value="ログイン" onClick="location.href='#'" style="width:200px;height:100px"></li>
+   <li> <input type="button" value="新規登録" onClick="location.href='#'" style="width:200px;height:100px"></li>
+  </ul>
+ </div>
+</div>
 
 </body>
 </html>
 
 
 
-<div class="balloon2-top">
+
 </div>
