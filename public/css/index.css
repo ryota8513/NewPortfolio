@@ -110,7 +110,7 @@ body{
   display: inline;
   padding:50px;
 }
-#button{
+.button{
   display       : inline-block;
   border-radius : 20%;          /* 角丸       */
   font-size     : 14pt;        /* 文字サイズ */

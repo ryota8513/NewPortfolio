@@ -14,13 +14,14 @@
 </div>
 
 <div class="common">
- <div class="form">
+@csrf
  <div class="form">
   <ul>
-   <li><input type="button" value="ログイン" onClick="location.href='#'" id="button"></li>
-   <li><input type="button" value="新規登録" onClick="location.href='#'" id="button"></li>
+   <li><input type="button" value="ログイン" onClick="location.href='./login'" class="button"></li>
+
+   <li><input type="button" value="新規登録" onClick="location.href='./NewCreate'" class="button"></li>
   </ul>
+  
   </div>
  </div>
-</div>
 @endsection

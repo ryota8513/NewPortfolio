@@ -16,6 +16,8 @@ Route::get('/', function () {
 });
 Route::get('index','PostController@index');
 
-Route::get('login-top',function(){
-    return view('login-top');
+//ログイン画面表示
+Route::get('login',function(){
+    return view('login');
 });
+// Route::post('login','PostController@login');

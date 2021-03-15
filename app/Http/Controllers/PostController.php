@@ -7,11 +7,15 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
-   
+   //ログイン前トップ表示
     public function index(){
         return view('index');
     }
-    
+    //ログインpush後表示
+    public function login(){
+        return view('login');
+    }
+
 
     /**
      * Show the form for creating a new resource.
