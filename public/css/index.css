@@ -13,6 +13,9 @@ li{
 body{
   margin: 0;
 }
+.common{
+  width:100%;
+}
 
 /* ヘッダーレイアウト */
 .header-top{
@@ -120,3 +123,4 @@ body{
   background    : #7fe8b5;     /* 背景色     */
   color         : #333333;     /* 文字色     */
 }
+

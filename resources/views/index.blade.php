@@ -1,6 +1,6 @@
 @extends('common.layout')
 @section('title','ようこそ旅bookへ')
-
+@endsection
 @section('content')
 <div class="slider-content">
   <ul class="slider">
