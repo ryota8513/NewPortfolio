@@ -123,3 +123,19 @@
 label{
   padding-left:10px;
 }
+.BackCreate{
+  border-bottom:solid 1px;
+  width:210px;
+  padding-top:30px;
+  margin:0 auto;
+}
+.Form h1{
+  text-align:center;
+}
+.Backlogin{
+  border-bottom:solid 1px;
+  width:210px;
+  padding-top:30px;
+  margin:0 auto;
+  margin-bottom:20px;
+}

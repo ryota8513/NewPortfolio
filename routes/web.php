@@ -14,10 +14,16 @@
 Route::get('/', function () {
     return view('welcome');
 });
+//ログイン前トップ表示
 Route::get('index','PostController@index');
 
 //ログイン画面表示
-Route::get('login',function(){
-    return view('login');
-});
+Route::get('login','UserController@login');
 // Route::post('login','PostController@login');
+
+//新規会員登録画面表示
+Route::get('NewCreate','UserController@NewCreate');
+//新規登録PUSH後
+Route::post('users','UserController@create');
+//ログイン後トップ表示
+Route::get('TopIndex','UserController@TopIndex');

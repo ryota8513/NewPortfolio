@@ -20,19 +20,20 @@ body{
 /* ヘッダーレイアウト */
 .header-top{
   /* background-color: pink; */
-  width:1000px;
+  width:1200px;
   height:150px;
   margin :0 auto;
   padding-bottom:20px;
 }
 .header-title{
-  width:300px;
+  width:350px;
   height:100px;
   /* background-color: aqua; */
 }
 .header-title p{
   margin-top:-25px;
   font-size:15px;
+  padding-left:100px;
 }
 .site-date{
   float:right;
