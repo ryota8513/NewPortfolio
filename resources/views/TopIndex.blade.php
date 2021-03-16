@@ -12,52 +12,47 @@
      <li><img src="{{asset('/image/sample6.jpg')}}"></li>
   </ul>
  </div>
+
 <div class="top">
   <h1>みんなの思い出</h1>  
-  <div class="top-content">
+  <ul class="top-content">
     
- <div clas="user-content">
+ <li class="user-content">
   <a href="#">
    <img class="photo" src="{{asset('/image/sample1.jpg')}}">
   </a>
    <p>name</p>
- </div>
-
- <div clas="user-content">
+</li>
+ <li class="user-content">
   <a href="#">
-   <img class="photo" src="{{asset('/image/sample2.jpg')}}">
+   <img class="photo" src="{{asset('/image/sample1.jpg')}}">
   </a>
    <p>name</p>
- </div>
-
- <div clas="user-content">
+</li>
+ <li class="user-content">
   <a href="#">
-   <img class="photo" src="{{asset('/image/sample3.jpg')}}">
+   <img class="photo" src="{{asset('/image/sample1.jpg')}}">
   </a>
    <p>name</p>
- </div>
-
- <div clas="user-content">
+</li>
+ <li class="user-content">
   <a href="#">
-   <img class="photo" src="{{asset('/image/sample4.jpg')}}">
+   <img class="photo" src="{{asset('/image/sample1.jpg')}}">
   </a>
    <p>name</p>
- </div>
-
- <div clas="user-content">
+</li>
+ <li class="user-content">
   <a href="#">
-   <img class="photo" src="{{asset('/image/sample5.jpg')}}">
+   <img class="photo" src="{{asset('/image/sample1.jpg')}}">
   </a>
    <p>name</p>
- </div>
-
- <div clas="user-content">
+</li>
+ <li class="user-content">
   <a href="#">
-   <img class="photo" src="{{asset('/image/sample6.jpg')}}">
+   <img class="photo" src="{{asset('/image/sample1.jpg')}}">
   </a>
    <p>name</p>
-  </div>
- </div>
+</li>
+</ul>
 </div>
-
 @endsection

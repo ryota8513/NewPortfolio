@@ -53,10 +53,12 @@
 <div class="common">
  @yield('content')
 </div>
-</body>
+
 
 <div class="footer">
  <div class="footer-content">
   
  </div>
 </div>
+
+</body>

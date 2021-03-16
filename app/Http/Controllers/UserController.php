@@ -21,12 +21,12 @@ class UserController extends Controller
 
     //ユーザー会員登録
     public function create(Request $request){
-         $users = new User();
-         $users ->name = $request -> name;
-         $users ->email = $request -> email;
-         $users ->password = $request -> password;
-         $users -> save();
-         return redirect('TopIndex');
+        $users = new User();
+        $users ->name = $request -> name;
+        $users ->email = $request -> email;
+        $users ->password = $request -> password;
+        $users -> save();
+        return redirect('TopIndex');
     }
 
 
