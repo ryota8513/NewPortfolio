@@ -15,19 +15,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 //ログイン前トップ表示
-Route::get('index','PostController@index');
+Route::get('/Auth/index','UserController@index');
 
 //ログイン画面表示
-Route::get('login','UserController@login');
-// Route::post('login','PostController@login');
+Route::get('/Auth/login','UserController@login');
+// Route::post('users','UserController@TopIndex');
 
 //新規会員登録画面表示
-Route::get('NewCreate','UserController@NewCreate');
+Route::get('/Auth/register','UserController@register');
+
 //新規登録PUSH後
 Route::post('users','UserController@create');
+
 //ログイン後トップ表示
 Route::get('TopIndex','UserController@TopIndex');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//ログインして名前があればTopIndexをviewする
+Route::get('/TopIndex', 'UserController@TopIndex')->name('TopIndex');

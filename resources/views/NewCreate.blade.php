@@ -1,4 +1,4 @@
-@extends('common.layout')
+<!-- @extends('common.layout')
 @section('title'.'新規会員登録フォーム')
 
 @section('content')
@@ -23,5 +23,5 @@
 </form>
 <a class="Backlogin" href="./login">登録済みの方はこちらから</a>
 </div>
-@endsection
+@endsection -->
 
