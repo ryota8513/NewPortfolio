@@ -1,4 +1,4 @@
-<!-- @extends('common.layout')
+@extends('common.layout')
 @section('title'.'新規会員登録フォーム')
 
 @section('content')

@@ -7,10 +7,10 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
-//    //ログイン前トップ表示
-//     public function index(){
-//         return view('index');
-//     }
+   //ログイン前トップ表示
+    public function index(){
+        return view('index');
+    }
     
 
     public function create()

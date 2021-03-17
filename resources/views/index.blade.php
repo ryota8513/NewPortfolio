@@ -15,9 +15,9 @@
 @csrf
  <div class="form">
   <ul>
-   <li><input type="submit" value="ログイン" onClick="location.href='/Auth/login'" class="button"></li>
+   <li><input type="submit" value="ログイン" onClick="location.href='/login'" class="button"></li>
    
-   <li><input type="submit" value="新規登録" onClick="location.href='/Auth/register'" class="button"></li>
+   <li><input type="submit" value="新規登録" onClick="location.href='/register'" class="button"></li>
   </ul>
   </div>
 @endsection

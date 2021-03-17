@@ -6,18 +6,13 @@ use Illuminate\Http\Request;
 use App\Models\User;
 class UserController extends Controller
 {
-    //ログイン前トップ表示
-    public function index(){
-        return view('/Auth/index');
-    }
-
     // ログインpush後表示
     public function login(){
-        return view('/Auth/login');
+        return view('login');
     }
     //新規会員登録画面表示
-    public function register(){
-        return view('/Auth/register');
+    public function NewCreate(){
+        return view('NewCreate');
     }
     //ログイン後のトップ表示
     public function TopIndex(){
@@ -33,7 +28,7 @@ class UserController extends Controller
         $users -> save();
         return redirect('TopIndex');
     }
-   
+}
     
 
 
