@@ -1,5 +1,5 @@
 @extends('common.layout')
-@section('title','ログインページ')
+@section('title','ログインフォーム')
 
 @section('content')
  <div class="login-content">

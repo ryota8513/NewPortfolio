@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\models\User;
+use App\Models\User;
 class UserController extends Controller
 {
     // ログインpush後表示
@@ -28,7 +28,7 @@ class UserController extends Controller
         $users -> save();
         return redirect('TopIndex');
     }
-
+   
 
 
 

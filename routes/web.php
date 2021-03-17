@@ -27,3 +27,7 @@ Route::get('NewCreate','UserController@NewCreate');
 Route::post('users','UserController@create');
 //ログイン後トップ表示
 Route::get('TopIndex','UserController@TopIndex');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
