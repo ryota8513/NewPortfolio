@@ -42,7 +42,7 @@
    </div>
   <div class="site-var">
    <ul>
-     <li><a href="/Auth/index">ホーム</a></li>
+     <li><a href="/index">ホーム</a></li>
      <li><a href="#">サイトについて</a></li>
      <li><a href="#">製作者について</a></li>
    </ul>  
