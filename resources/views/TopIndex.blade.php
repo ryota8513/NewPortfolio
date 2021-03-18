@@ -1,4 +1,4 @@
-@extends('common.layout')
+@extends('layouts.layout')
 @section('title'.'ようこそ旅BOOKへ')
 
 @section('content')
