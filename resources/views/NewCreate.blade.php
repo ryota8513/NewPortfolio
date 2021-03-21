@@ -23,5 +23,5 @@
 </form>
 <a class="Backlogin" href="./login">登録済みの方はこちらから</a>
 </div>
-@endsection -->
+@endsection
 
