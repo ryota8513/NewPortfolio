@@ -18,13 +18,13 @@ Route::get('/', function () {
 Route::get('index','PostController@index');
 
 //ログイン画面表示
-Route::get('login','UserController@login');
+Route::get('Logins','UserController@login');
 // Route::post('login','PostController@login');
 
 //新規会員登録画面表示
 Route::get('NewCreate','UserController@NewCreate');
 //新規登録PUSH後
-Route::post('users','UserController@create');
+// Route::post('users','UserController@create');
 //ログイン後トップ表示
 Route::get('TopIndex','UserController@TopIndex');
 //aboutについて表示
@@ -36,6 +36,7 @@ Route::get('MyList','userController@list');
 Route::get('post','PostController@post');
 Route::post('posts','PostController@create');
 Route::get('ThanksForm','PostController@ThanksForm');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
