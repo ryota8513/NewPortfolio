@@ -28,6 +28,15 @@ class UserController extends Controller
         $users -> save();
         return redirect('TopIndex');
     }
+
+    public function showAbout(){
+        return view('about');
+    }
+
+    public function list(){
+        $users=user::find($request->id);
+        return view('list',compact('users'));
+    }
 }
     
 
@@ -37,4 +46,3 @@ class UserController extends Controller
 
 
 
-}

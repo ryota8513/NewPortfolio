@@ -27,7 +27,15 @@ Route::get('NewCreate','UserController@NewCreate');
 Route::post('users','UserController@create');
 //ログイン後トップ表示
 Route::get('TopIndex','UserController@TopIndex');
+//aboutについて表示
+Route::get('about','UserController@showAbout');
 
+//MyList表示
+Route::get('MyList','userController@list');
+//投稿フォーム表示, データーベース送信
+Route::get('post','PostController@post');
+Route::post('posts','PostController@create');
+Route::get('ThanksForm','PostController@ThanksForm');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

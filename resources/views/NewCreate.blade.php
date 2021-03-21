@@ -17,7 +17,7 @@
   </div>
   <div class="Form-Item">
     <p class="Form-Item-Label">パスワード</p>
-    <input type="text" name="password" class="Form-Item-Input" placeholder="6文字以内で入力してください" >
+    <input type="password" name="password" class="Form-Item-Input" placeholder="6文字以内で入力してください" >
   </div>
   <input type="submit" class="Form-Btn" value="登録">
 </form>

@@ -12,13 +12,25 @@ class PostController extends Controller
         return view('index');
     }
     
-
-    public function create()
-    {
-        //
+    //投稿フォーム表示
+    public function post(){
+        return view('post');
+    }
+    
+    public function ThanksForm(){
+        return view('ThanksForm');
+    }
+    public function create(Request $request){
+        $posts =new Post();
+        $posts -> title = $request -> title;
+        $posts -> place= $request -> place;
+        $posts -> star = $request -> star;
+        $posts -> memory = $request -> memory;
+        $posts -> file = $request -> file;
+        $posts -> save();
+        return redirect('ThanksForm');
     }
 
-    
     public function store(Request $request)
     {
         //
