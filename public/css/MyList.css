@@ -1,17 +1,19 @@
 /* MyList表示画面 */
 
 .middle-content{
+ 
   width:1200px;
-  margin:0 auto;
+  margin:100px auto;
 }
 
 .memory{
   width:100%;
-  margin:0 auto;
+  /* margin:0 auto; */
 }
 .memory-content{
   float:left;
   padding-left:10px;
-  
+  /* margin:0 auto;  */
   text-align:center;
+  width:30%;
 }

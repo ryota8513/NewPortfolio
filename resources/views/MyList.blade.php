@@ -35,29 +35,31 @@
   <!-- <input type="submit" class="Form-Btn" value="編集">  -->
   <button type="submit" class="Form-Btn">編集</button>
   </form>
+</div>
+</div>
 
 
   <div class="middle-content">
   <h1>思い出</h1>  
   <ul class="memory">
   <form method="POST" action="MemoryEdit">
+
  <li class="memory-content">
   <a href="#">
    <img class="photo" src="{{asset('/image/sample1.jpg')}}">
   </a>
-   
 </li>
+
  <li class="memory-content">
   <a href="#">
    <img class="photo" src="{{asset('/image/sample1.jpg')}}">
   </a>
- 
 </li>
+
  <li class="memory-content">
   <a href="#">
    <img class="photo" src="{{asset('/image/sample1.jpg')}}">
   </a>
-  
 </li>
 </ul>
 <!-- <li><button type="submit" value="BOOkへ保存"  class="button">BOOkへ保存</button></li> -->
