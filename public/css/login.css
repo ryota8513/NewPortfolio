@@ -1,3 +1,6 @@
+/* Logins.bladeのcss */
+/* NewCreate.bladeのcss 　共通*/
+
 .Form {
   margin-top: 80px;
   margin-left: auto;
@@ -110,6 +113,7 @@
   color: #fff;
   font-weight: bold;
   font-size: 20px;
+  cursor:pointer;
 }
 /* @media screen and (max-width: 480px) {
   .Form-Btn {
@@ -138,4 +142,13 @@ label{
   padding-top:30px;
   margin:0 auto;
   margin-bottom:20px;
+}
+
+span{
+  width:50px;
+  border-radius: 50%;
+}
+file{
+  width:50px;
+  border-radius: 50%;
 }

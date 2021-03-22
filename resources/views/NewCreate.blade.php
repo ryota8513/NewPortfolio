@@ -1,3 +1,5 @@
+<!-- 新規登録画面 -->
+
 @extends('layouts.layout')
 @section('title'.'新規会員登録フォーム')
 
@@ -8,9 +10,15 @@
   <div class="Form">
    <h1>新規会員登録</h1>
 
+   <div class="Form-Item">
+   <p class="Form-Item-Label">アイコン</p>
+   <input type="file" id="target" accept="image/*">
+   <!-- <img id="myImage"> -->
+   </div>
+
   <div class="Form-Item">
     <p class="Form-Item-Label">ユーザー名</p>
-    <input type="text" name="name" class="Form-Item-Input" placeholder="例）山田太郎"  autofocus>
+    <input type="text" name="name" class="Form-Item-Input" placeholder="例）山田太郎" autofocus>
     @error('name')
      <span class="invalid-feedback" role="alert">
          <strong>{{ $message }}</strong>
@@ -37,7 +45,7 @@
       </span>
     @enderror -->
   </div>
-  <input type="submit" class="Form-Btn" value="登録">
+  <button type="submit" class="Form-Btn" value="登録">登録</button>
 </form>
 <a class="Backlogin" href="./login">登録済みの方はこちらから</a>
 </div>

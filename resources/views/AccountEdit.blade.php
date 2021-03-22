@@ -1,39 +1,37 @@
+<!-- アカウント編集画面 -->
+
 @extends('layouts.layout')
 @section('title','編集フォーム')
 
 @section('content')
-<div class="MyPage">
- <form method="POST" action="edit">
- </form>
- @csrf
- <div class="account">
+<div class="login-content">
+ <form name="login-form" method="POST" action="upAccountEdit">
+ <div class="Form">
+ <h1>Myアカウント</h1>
+ 
+ <!-- <div class="Form-Item">
+    <p class="Form-Item-Label">ID</p>
+    <input type="name" class="Form-Item-Input">
+  </div> -->
 
- <div class="account-content">
-  <div class="content-left">
-  <h2>名前</h2>
+  <div class="Form-Item">
+    <p class="Form-Item-Label">名前</p>
+    <input type="name" class="Form-Item-Input" value="{{$users->name}}">
   </div>
-  <div class="content-right">
-  <input type="text" name="name" placeholder="新規名を記入"style="width:250px; height:50px; font-size:20px;" maxlength="20" value="{{$users->name}}">
-  </div>
-</div>
 
- <div class="account-content">
-  <div class="content-left">
-  <h2>メールアドレス</h2>
+  <div class="Form-Item">
+    <p class="Form-Item-Label">メールアドレス</p>
+    <input type="email" class="Form-Item-Input" value="{{$users->email}}">
   </div>
-  <div class="content-right">
-  <input type="text" name="name" placeholder="新規アドレスを記入"style="width:250px; height:50px; font-size:20px;" maxlength="20" value="{{$users->email}}">
-  </div>
-</div>
 
- <div class="account-content">
-  <div class="content-left">
-  <h2>パスワード</h2>
+  <div class="Form-Item">
+    <p class="Form-Item-Label">パスワード</p>
+    <input type="password" class="Form-Item-Input" id="js-password" value="{{$users->password}}">
+    <p>
+      <label for="js-passcheck">パスワードを表示する</label>
+      <input type="checkbox" id="js-passcheck">
+    </p>
   </div>
-  <div class="content-right">
-  <input type="password" name="name" placeholder="新規パスワードを記入"style="width:250px; height:50px; font-size:20px;" maxlength="20" >
-  </div>
-</div>
-
-</div>
+  <button type="submit" onclick="return check();" class="Form-Btn">更新</button>
+  </form>
 @endsection

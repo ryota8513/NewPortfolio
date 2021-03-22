@@ -1,3 +1,5 @@
+<!-- ログイン　新規登録画面 -->
+
 @extends('layouts.layout')
 @section('title','ようこそ旅bookへ')
 

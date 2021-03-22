@@ -1,3 +1,5 @@
+<!-- ログイン後 新規登録後表示画面 -->
+
 @extends('layouts.layout')
 @section('title'.'ようこそ旅BOOKへ')
 
@@ -23,6 +25,7 @@
   </a>
    <p>name</p>
 </li>
+
  <li class="user-content">
   <a href="#">
    <img class="photo" src="{{asset('/image/sample1.jpg')}}">
@@ -54,5 +57,6 @@
    <p>name</p>
 </li>
 </ul>
+<li><button type="submit" value="BOOkへ保存" onClick="location.href='/post'" class="button">BOOkへ保存</button></li>
 </div>
 @endsection

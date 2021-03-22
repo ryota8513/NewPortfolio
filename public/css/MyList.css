@@ -1,0 +1,17 @@
+/* MyList表示画面 */
+
+.middle-content{
+  width:1200px;
+  margin:0 auto;
+}
+
+.memory{
+  width:100%;
+  margin:0 auto;
+}
+.memory-content{
+  float:left;
+  padding-left:10px;
+  
+  text-align:center;
+}

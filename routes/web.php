@@ -29,9 +29,12 @@ Route::get('NewCreate','UserController@NewCreate');
 Route::get('TopIndex','UserController@TopIndex');
 //aboutについて表示
 Route::get('about','UserController@showAbout');
-
 //MyList表示
-Route::get('MyList','userController@list');
+Route::get('MyList','UserController@showMyList');
+//AccountEditアクセス  MyList編集
+Route::post('AccountEdit','UserController@AccountEdit');
+//AccountEditアクセス  MyList更新
+Route::post('upAccountEdit','UserController@updateAccount');
 //投稿フォーム表示, データーベース送信
 Route::get('post','PostController@post');
 Route::post('posts','PostController@create');

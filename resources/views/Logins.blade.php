@@ -1,3 +1,5 @@
+<!-- ログイン画面 -->
+
 @extends('layouts.layout')
 @section('title','ログインフォーム')
 

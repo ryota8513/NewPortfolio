@@ -18,7 +18,7 @@ class UserController extends Controller
     public function TopIndex(){
         return view('TopIndex');
     }
-
+    
     //ユーザー会員登録
     // public function create(Request $request){
     //     $users = new User();
@@ -32,13 +32,39 @@ class UserController extends Controller
     public function showAbout(){
         return view('about');
     }
+    
+    public function showMyList(){
+        return view('MyList');
+    }
 
-    // public function list(){
-    //     $users=user::find($request->id);
-    //     return view('list',compact('users'));
-    // }
+    //MyListユーザー情報表示
+    public function showList(){
+        $users = user::all();
+        $date = ['users'=>$users];
+        return view('MyList',$date);
+    }
+
+    //MyList編集
+    public function AccountEdit(Request $request){
+        $users = user::find($request->id);
+        return view('AccoutEdit',compact('users'));
+    }
+
+    //MyList更新
+    public function updateAccount(Request $request){
+        $users =user::find($request->id);
+        $users ->name = $request -> name;
+        $users ->email = $request -> email;
+        $users ->password = $request -> password;
+        $users ->save();
+        return redirect('MyList');
+    }
+
+
+    
 }
     
+
 
 
 

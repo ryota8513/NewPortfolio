@@ -1,3 +1,5 @@
+<!-- 投稿後表示画面 -->
+
 @extends('layouts.layout')
 @section('title'.'旅BOOK')
 

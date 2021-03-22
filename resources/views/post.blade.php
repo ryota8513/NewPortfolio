@@ -1,3 +1,5 @@
+<!-- 思い出投稿画面 -->
+
 @extends('layouts.layout')
 @section('title'.'投稿フォーム')
 

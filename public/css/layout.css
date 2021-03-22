@@ -80,48 +80,4 @@ body{
   margin:0 auto;
 }
 
-/* ヘッダー下、画像表示用レイアウト */
-.slider-container {
-  position: relative;
-  width:100%;
-}
-.slider-container.initialized {
-  display:block;
-}
-.slider{
-  padding:0;
-  margin-top:0px;
-}
-.slider li img{
-  width:100%;
-  height:450px;
-}
-.form{ 
-  position:absolute;
-  width:100%;
-  height:100px;
-  text-align: center;
-  z-index:30;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -80%);
-  /* opacity:0.8; */
-}
-.form ul{
-  padding-left: 0px;
-}
-.form li{
-  display: inline;
-  padding:50px;
-}
-.button{
-  display       : inline-block;
-  border-radius : 20%;          /* 角丸       */
-  font-size     : 14pt;        /* 文字サイズ */
-  text-align    : center;      /* 文字位置   */
-  cursor        : pointer;     /* カーソル   */
-  padding       : 10px 24px;   /* 余白       */
-  background    : #7fe8b5;     /* 背景色     */
-  color         : #333333;     /* 文字色     */
-}
-
+/* footerレイアウト */

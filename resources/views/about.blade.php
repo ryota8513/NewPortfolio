@@ -1,3 +1,5 @@
+<!-- サイトについて表示画面 -->
+
 @extends('layouts.layout')
 @section('title','サイトについて')
 
