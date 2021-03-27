@@ -18,6 +18,9 @@ class UserController extends Controller
     public function TopIndex(){
         return view('TopIndex');
     }
+    // public function redirectPath(){
+    //     return 'TopIndex';
+    // }
     
     //ユーザー会員登録
     // public function create(Request $request){

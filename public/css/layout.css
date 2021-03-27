@@ -49,11 +49,11 @@ body{
   /* background-color:bisque; */
 }
 .user-nav li ul {
-   position: absolute; 
+  position: absolute; 
   visibility: hidden;
   border:solid 1px black;
   transition:all 0.2s;
-  margin-top:-3px;
+  margin-top:-5px;
   
 }
 .user-nav li:hover ul {
@@ -64,8 +64,8 @@ body{
   z-index:20;
 } 
 .fas{
-  margin-left:5px;
-  padding-right:10px;
+  margin-left:3px;
+  padding-right:5px;
 }
 .site-var li{
   float:left;

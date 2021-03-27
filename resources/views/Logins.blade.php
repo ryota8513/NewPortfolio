@@ -18,6 +18,7 @@
      </span>
     @enderror
   </div>
+
   <div class="Form-Item">
     <p class="Form-Item-Label">パスワード</p>
     <input type="password" name="password" class="Form-Item-Input" id="js-password" placeholder="password">
@@ -26,6 +27,7 @@
       <input type="checkbox" id="js-passcheck">
     </p>
   </div>
+  
   <input type="submit" class="Form-Btn" value="ログイン"> 
   </form>
   <a class="BackCreate" href="./NewCreate">登録がまだの方はこちらから</a>
